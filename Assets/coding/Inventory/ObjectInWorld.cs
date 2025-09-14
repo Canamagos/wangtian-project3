@@ -15,9 +15,12 @@ public class ObjectInWorld : MonoBehaviour
 
     void AddNewItem()
     {
-        if (inv.itemList.Contains(item))
+        //print(11111);
+        if (!inv.itemList.Contains(item))
         {
             inv.itemList.Add(item);
+            InventoryManager.CreateNewItem(item);
+            print(11111);
         }
         
     }

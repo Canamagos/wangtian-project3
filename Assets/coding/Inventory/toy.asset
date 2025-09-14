@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9f0c604431ee4fd4bb0decc945e1669, type: 3}
-  m_Name: New Inventory
+  m_Script: {fileID: 11500000, guid: 700051a695482491a8b5396c6c73cc6b, type: 3}
+  m_Name: toy
   m_EditorClassIdentifier: 
-  itemList: []
+  itemName: toy
+  itemImage: {fileID: 21300000, guid: 32e31a7e90fa4b7429ad5e7b03196be4, type: 3}
+  itemInfo: my favorite thing in childhood
