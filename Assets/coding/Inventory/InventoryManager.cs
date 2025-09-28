@@ -13,7 +13,7 @@ public class InventoryManager : MonoBehaviour
 
     public Slot slotPrefab;
 
-    public Text info;
+    //public Text info;
 
     private void Awake()
     {

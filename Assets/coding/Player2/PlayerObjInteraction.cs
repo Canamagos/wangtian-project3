@@ -23,13 +23,16 @@ public class PlayerObjInteraction : MonoBehaviour
                 // If R key is pressed, interact
                 if (Input.GetKeyDown(KeyCode.R))
                 {
+                    print(hit.collider.gameObject.name); 
+                    hit.collider.GetComponent<ObjectInWorld>().AddNewItem();
                     Destroy(hit.collider.gameObject);
                     //interact with the object
-                    Debug.Log("Interacted with " + hit.collider.name);
+                    //Debug.Log("Interacted with " + hit.collider.name);
                 }
                 return; // Exit to avoid hiding UI immediately
             }
-            canInteractUi.SetActive(false); // Hide UI if not looking at interactible
+            
         }
+        canInteractUi.SetActive(false); // Hide UI if not looking at interactible
     }
 }

@@ -8,12 +8,12 @@ public class ObjectInWorld : MonoBehaviour
     public Item item;
     public Inventory inv;
 
-    private void OnMouseDown()
-    {
-        AddNewItem();
-    }
+    //private void OnMouseDown()
+    //{
+    //    AddNewItem();
+    //}
 
-    void AddNewItem()
+    public void AddNewItem()
     {
         //print(11111);
         if (!inv.itemList.Contains(item))
