@@ -9,5 +9,15 @@ public class PlayerMove01 : MonoBehaviour
     {
         float moveX = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         transform.Translate(moveX, 0, 0);
+
+        if (moveX > 0)
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+        }
+
+        if (moveX < 0)
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = true;
+        }
     }
 }
