@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Sharp : MonoBehaviour
 {
-    public GameObject correctBtn;
+    public GameObject pintu;
     public GameObject photoCanvas;
 
     private void OnMouseDown()
     {
         photoCanvas.SetActive(true);
-        correctBtn.SetActive(true);
+        pintu.SetActive(true);
     }
 
 
