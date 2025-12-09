@@ -57,6 +57,7 @@ public class PuzzlePiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         {
             // 吸附到目标位置
             rectTrans.anchoredPosition = targetTransform.GetComponent<RectTransform>().anchoredPosition;
+            rectTrans.rotation = targetTransform.rotation;
             isCorrect = true;
             manager.CheckPuzzleComplete(); // 通知管理器检查是否完成
         }
